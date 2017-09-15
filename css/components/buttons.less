@@ -1,0 +1,117 @@
+//main: main.less
+
+button {
+  outline: 0 !important;
+}
+.btn {
+  border: 1px solid @lightgrey;
+  color: @white;
+  background: none;
+  border-radius: 0;
+  transition: 0.4s;
+}
+.btn:hover {
+  color: @white;
+  background: @orange;
+  border-color: @orange;
+}
+.btn:focus {
+  color: @white;
+  background: none;
+  border-color: @white;
+}
+.btn-submit {
+  color: @white;
+  background: @orange;
+  border: 1px solid @orange;
+  border-radius: 0;
+  margin: 25px auto;
+}
+.btn-submit:hover {
+  background: @darkgrey;
+  border-color: @white;
+}
+.btn-accept {
+  color: @green;
+  border-color: @green;
+  margin: 15px 10px;
+}
+.btn-accept:hover {
+  background: @green;
+  border-color: @green;
+}
+.btn-decline {
+  color: @red;
+  border-color: @red;
+  margin: 15px 10px;
+}
+.btn-decline:hover {
+  color: @white;
+  background: @red;
+}
+.btn-login {
+  width: 100%;
+  border: none;
+  background: @orange;
+  transition: 0.7s;
+  margin-top: 50px;
+  padding: 10px 20px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.btn-login:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0;
+	height: 100%;
+	background: @white;
+	transition: 0.7s;
+  z-index: -1;
+}
+.btn-login:hover:before {
+	width: 100%;
+  color: @darkgrey;
+}
+.btn-modal-exit {
+  color: @white;
+}
+.btn-modal-exit:hover {
+  background: @orange;
+  border-color: @orange;
+  color: @white;
+}
+.close {
+  font-size: 32px;
+  transition: 0.4s;
+  color: @lightgrey;
+  opacity: 1;
+  text-shadow: none;
+}
+.close:hover {
+  color: @orange;
+  opacity: 1;
+}
+.btn-help {
+  padding: 8px 14px;
+  font-size: 16px;
+  margin: 10px 5px;
+  border-color: @white;
+}
+.btn-help:hover {
+  color: @white;
+  border-color: @orange;
+  background: @orange;
+}
+
+
+//Buttons groups
+.buttons-group-choice {
+  margin: 20px 10px;
+}
+.buttons-group-help {
+  margin: 20px 0;
+  text-align: center;
+}

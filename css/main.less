@@ -1,0 +1,770 @@
+//out: style.css, compress: true
+
+//Colors
+@darkgrey: #2f2f2f;
+@grey: #3c3c3c;
+@lightgrey: #464646;
+@orange: #cd7400;
+@white: #d9d9d9;
+
+//Fonts
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,500,700&subset=latin-ext";
+
+
+
+// <----- Scroll bar -----> \\
+
+*::-webkit-scrollbar {
+  width: 1em;
+}
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: @darkgrey;
+  outline: 1px solid slategrey;
+}
+
+// <----- Main styles -----> \\
+
+body {
+  background: @grey;
+  font-family: "Raleway", sans-serif;
+}
+.alert-warning {
+  border-radius: 0;
+}
+.padd {
+  padding-left: 15px !important;
+  transition: padding-left .24s easa-out;
+}
+section.container-fluid {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-left: 280px;
+  transition: padding-left .24s ease-out;
+  color: @white;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+// <----- Navigation -----> \\
+
+nav {
+  background: #2f2f2f;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid @lightgrey;
+}
+.logo-wrapper {
+  width: 200px;
+  float: left;
+  height: 50px;
+  border-right: 1px solid @lightgrey;
+  border-bottom: 1px solid @lightgrey;
+}
+.logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 10px 20%;
+}
+
+// --> Nav list <-- \\
+
+.nav-navigation {
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+.nav-navigation  li {
+  padding: 0 10px;
+  border-right: 1px solid @lightgrey;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.nav-navigation li a {
+  color: @white;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.nav-navigation li a:hover {
+  color: @orange;
+}
+.navbar-fixed-top {
+  z-index: 1000;
+}
+
+// --> Menu Btn <-- \\
+
+.wrapper-btn {
+  float: left;
+  border-right: 1px solid @lightgrey;
+  height: 50px;
+}
+.menu-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  cursor: pointer;
+  margin: 18px 10px;
+  color: white;
+}
+.menu-btn span {
+  height: 2px;
+  background: white;
+  margin-bottom: 5px;
+  display: block;
+  transition: 0.4s;
+}
+.menu-btn span:nth-child(2) {
+  width: 80%;
+}
+.menu-btn span:nth-child(3) {
+  width: 50%;
+  margin-bottom: 0;
+}
+.menu-btn:hover span:nth-child(2) {
+  width: 100%;
+}
+.menu-btn:hover span:nth-child(3) {
+  width: 80%;
+}
+
+// --> User panel <-- \\
+
+.user-panel {
+  color: white;
+  float: right;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid @lightgrey;
+  border-right: 1px solid @lightgrey;
+  margin-right: 20px;
+}
+.user-panel p {
+  margin: 0 10px;
+  transition: 0.4s;
+  cursor: pointer;
+  color: @white;
+}
+.user-panel p:hover {
+  color: @orange;
+}
+.user-panel i {
+  padding: 0 8px;
+  font-size: 18px;
+  color: @white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.user-panel i:hover {
+  color: @orange;
+}
+.user-panel .fa-cog:hover {
+  transform: rotate(90deg);
+}
+.user-panel .badge {
+  top: 6px;
+  position: absolute;
+  padding: 3px 6px;
+  background: @orange;
+}
+.user-panel .dropdown {
+  padding: 0 8px;
+}
+.user-panel .dropdown-menu {
+  right: -1px;
+  left: auto;
+  width: 212px;
+  border-radius: 0;
+  top: 32px;
+  background: @grey;
+  border: 1px solid @lightgrey;
+  color: white;
+}
+.user-panel .dropdown-menu a {
+  color: white;
+  transition: 0.4s;
+}
+.user-panel .dropdown-menu a:hover {
+  color: @orange;
+  background: none;
+}
+.user-panel .divider {
+  background: @lightgrey;
+}
+
+// --> Menu <-- \\
+
+.left-menu {
+  display: block;
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  width: 200px;
+  height: 100vh;
+  color: white;
+  background: @darkgrey;
+  border-right: 1px solid @lightgrey;
+  transition: left .24s ease-out;
+  overflow-y: auto;
+}
+.left-menu h2 {
+  font-size: 18px;
+  padding: 20px 5px;
+  margin: 0;
+  text-align: center;
+}
+.left-menu ul {
+  list-style: none;
+  padding: 0px 0px 0px 0px;
+  margin: 0;
+}
+.left-menu ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  height: 40px;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid @darkgrey;
+  border-bottom: 1px solid @grey;
+  border-left: 1px solid @grey;
+}
+.left-menu ul li a:hover {
+  background: @grey;
+  color: @orange;
+  border: 1px solid @orange;
+}
+.left-menu i {
+  padding: 0 5px 0 20px;
+}
+.left-menu .active {
+  border-right: 2px solid @orange;
+  color: @orange;
+  background: @grey;
+}
+.left-menu.visible {
+  left: -200px;
+  transition: left .24s ease-out;
+  padding-bottom: 70px;
+}
+.blocked:hover {
+  cursor: not-allowed;
+}
+.left-menu p {
+  margin: 0 0 5px 0;
+  padding: 10px 2px;
+  color: @white;
+  background: @orange;
+}
+.left-menu p:hover {
+  cursor: pointer;
+}
+.menu-hidden-nav {
+  margin: 10px 0 !important;
+}
+.menu-hidden-nav li a {
+  padding: 0 5px;
+}
+.menu-hidden-nav li a:first-of-type {
+  border-top: 1px solid @lightgrey;
+}
+.left-menu .list {
+  padding-bottom: 70px;
+}
+
+// <----- Login form ------> \\
+
+#login {
+  background: @grey;
+}
+header {
+  width: 320px;
+  margin: 50px auto 10px auto;
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+#login-form form {
+  margin: 4% auto;
+  height: 25%;
+  width: 320px;
+  padding: 25px;
+  background: @darkgrey;
+  box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.37);
+}
+#login-form label {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#login-form input {
+  border-radius: 0;
+  background-color: @darkgrey;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid @orange;
+  box-shadow: none;
+  color: white;
+  transition: 0.8s;
+}
+#login-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px @grey inset;
+  -webkit-text-fill-color: white !important;
+}
+.checkbox {
+  margin-top: 20px;
+}
+.btn-login {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  color: white;
+  background: @orange;
+  transition: 0.7s;
+  margin-top: 50px;
+  padding: 10px 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-login:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0;
+	height: 100%;
+	background: white;
+	transition: all 1.2s ease;
+}
+.btn-login:hover:before {
+	width: 100%;
+  color: @darkgrey;
+  content: 'Wyślij';
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.btn-login:hover {
+  border: none;
+}
+
+
+
+
+textarea.form-control {
+  background: @lightgrey;
+  border: 0 !important;
+  border-radius: 0;
+  color: #929292;
+  padding: 6px 8px;
+  width: 100%;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+textarea.form-control:focus {
+  outline: 0 !important;
+  box-shadow: 0 !important;
+}
+
+// <----- Footer -----> \\
+
+footer {
+  background: @darkgrey;
+  color: @white;
+  padding: 6px 0;
+  border-top: 1px solid @lightgrey;
+}
+
+// <----- Table -----> \\
+
+.table {
+  border: 1px solid @lightgrey;
+}
+.table thead {
+  background: @orange;
+}
+.table>thead>tr>th {
+  border-bottom: none;
+}
+.table>tbody>tr>td {
+  border-top: 1px solid @lightgrey;
+}
+.table a i {
+  color: @white;
+}
+.table a i:hover {
+  color: @orange;
+}
+
+// <----- Panel ----->  \\
+
+section {
+  color: @white;
+}
+section .panel {
+  border-radius: 0;
+  background: @grey;
+  border: 2px solid @grey;
+}
+section .panel:hover {
+  border: 2px solid @orange;
+}
+section .panel-heading {
+  background: @darkgrey;
+  border-radius: 0;
+}
+section .panel-body {
+  border: 1px solid @lightgrey;
+  border-top: none;
+}
+section .panel-footer {
+  background: @grey;
+  border: 1px solid @lightgrey;
+  border-top: none;
+  border-radius: 0;
+}
+section h3 {
+  border: 1px solid @lightgrey;
+  padding: 7px;
+  background: @lightgrey;
+}
+.add-panel {
+  transition: 0.4s;
+}
+.add-panel:hover {
+  color: @orange;
+  cursor: pointer;
+}
+
+// <----- User managment -----> \\
+
+.table i {
+  padding: 0 4px;
+  transition: 0.4s;
+  font-size: 18px;
+}
+.table i:hover {
+  color: @orange;
+  cursor: pointer;
+}
+.table-responsive {
+  border: none;
+}
+.modal-content {
+  border-radius: 0;
+  background: @darkgrey;
+  color: @white;
+}
+.modal-header {
+  border-bottom: 1px solid @lightgrey;
+}
+.modal-body {
+  padding: 20px 10%;
+}
+.form input {
+  border-radius: 0;
+  background: @grey;
+  border: none;
+  box-shadow: none;
+  color: white;
+  transition: 0.8s;
+  outline: none;
+}
+.form input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px @grey inset;
+  -webkit-text-fill-color: white !important;
+}
+.form.panel-form input{
+  background: @lightgrey;
+}
+.modal-footer {
+  border-top: 1px solid @lightgrey;
+}
+.btn.exit {
+  border-radius: 0;
+  background: @darkgrey;
+  color: @white;
+  transition: 0.4s;
+  border-color: @white;
+}
+.btn.exit:hover {
+  background: @orange;
+  color: @white;
+  border-color: @orange;
+}
+.btn.submit {
+  margin: 25px auto;
+  display: block;
+  color: @white;
+  background: @orange;
+  border: 1px solid @orange;
+  border-radius: 0;
+  transition: 0.7s;
+}
+.btn.submit:hover {
+  background: @darkgrey;
+  border: 1px solid @white;
+}
+
+// <----- Maps -----> //
+
+.form select {
+  border: none;
+  background: @lightgrey;
+  color: @white;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form select option:focus {
+  border: none;
+  text-align: center;
+  outline: none;
+}
+.form .select
+{
+  min-height: 50vh;
+  height: auto;
+}
+
+// <----- Schedule ----->  \\
+
+.done {
+  color: #4EB682;
+  font-weight: bold;
+}
+.in-work {
+  color: #F5FF90;
+  font-weight: bold;
+}
+.not-done {
+  color: #B64E58;
+  font-weight: bold;
+}
+.raport {
+  transition: 0.4s;
+}
+.raport:hover {
+  color: @orange;
+  cursor: pointer;
+}
+input[type="file"] {
+  display: none;
+}
+.file-upload {
+  border: 1px solid @white;
+  display: inline-block;
+  padding: 6px 12px;
+  transition: 0.4s;
+}
+.file-upload:hover {
+  background: @orange;
+  border-color: @orange;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.btn-accept {
+  background: none;
+  color: #4EB682;
+  border: 1px solid #4EB682;
+  border-radius: 0;
+  margin: 15px 10px;
+  transition: 0.4s;
+}
+.btn-decline {
+  background: none;
+  color: #B64E58;
+  border: 1px solid #B64E58;
+  border-radius: 0;
+  margin: 15px 10px;
+  transition: 0.4s;
+}
+.btn-decline:hover {
+  cursor: pointer;
+  background: #B64E58;
+  color: @white;
+}
+.btn-accept:hover {
+  cursor: pointer;
+  color: @white;
+  background: #4EB682;
+}
+
+// <----- Nav tabs ------> \\
+
+.nav-tabs {
+  border-bottom: none;
+}
+.nav-tabs>li {
+  margin: 0;
+}
+.nav-tabs li a {
+  color: @white;
+  border: 1px solid @lightgrey;
+  border-radius: 0 !important;
+  transition: 0.4s;
+}
+.nav-tabs li a:hover {
+  background: @orange;
+  color: @white;
+  border-color: @orange;
+}
+.nav-tabs>li.active>a {
+  background: @orange !important;
+  border-color: @orange !important;
+  color: @white !important;
+}
+.nav-stacked>li+li {
+  margin: 0;
+}
+.tabs-buttons {
+  padding: 25px 0;
+}
+.accept>a {
+  background: #4EB682;
+  border-color: #4EB682;
+}
+
+// <----- New shit -----> \\
+
+.square-tile {
+  height: 200px;
+  position: relative;
+  border: 2px solid @white;
+  margin-bottom: 50px;
+  transition: 0.7s;
+  background: @darkgrey;
+}
+.square-tile:hover {
+  cursor: pointer;
+  background: @orange;
+  color: @white;
+  border-color: @orange;
+}
+.square-tile h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  font-size: 26px;
+  color: @white;
+}
+
+//gallery tiles
+
+.gallery-tile {
+  position: relative;
+  z-index: 5;
+}
+.gallery-tile:hover {
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1031
+}
+.overlay img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 80%;
+  width: 100%;
+  z-index: 1032;
+}
+.overlay i {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  font-size: 26px;
+  color: @white;
+  z-index: 1032;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.overlay i:hover {
+  color: @orange;
+}
+
+
+// <----- Media -----> \\
+
+@media screen and (max-width: 992px) {
+  section.container-fluid {
+    padding-left: 15px;
+  }
+  .logo-wrapper {
+    width: 100px;
+    border-bottom: none;
+  }
+  .logo-wrapper img {
+    padding: 10px 10px;
+  }
+  .left-menu {
+    border-top: 1px solid @grey;
+    left: -200px;
+  }
+  .left-menu.visible {
+    left: 0px;
+  }
+  .table-tab {
+    margin: 20px 0;
+  }
+  .tab-pane img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #login-form form {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .user-panel p {
+    display: none;
+  }
+  header {
+    width: 240px;
+  }
+
+}
+
+@media screen and (max-height: 380px) {
+  .overlay i {
+    right: 25px;
+  }
+}

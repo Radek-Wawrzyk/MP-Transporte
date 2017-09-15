@@ -1,0 +1,327 @@
+//main: main.less
+
+nav {
+  background: #2f2f2f;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid @lightgrey;
+}
+.nav-logo {
+  width: 230px;
+  float: left;
+  height: 100%;
+  border-right: 1px solid @lightgrey;
+}
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 10px 20%;
+}
+.navbar-fixed-top {
+  z-index: 1000;
+}
+
+//Nav links
+
+.nav-navigation {
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.nav-navigation  li {
+  padding: 0 10px;
+  border-right: 1px solid @lightgrey;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.nav-navigation li a {
+  color: @white;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.nav-navigation li a:hover {
+  color: @orange;
+}
+
+//Nav button
+
+.nav-wrapper-btn {
+  float: left;
+  border-right: 1px solid @lightgrey;
+  height: 100%;
+  padding: 0 5px;
+}
+.nav-menu-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  cursor: pointer;
+  margin: 21px 10px;
+  color: white;
+}
+.nav-menu-btn span {
+  height: 2px;
+  background: white;
+  margin-bottom: 5px;
+  display: block;
+  transition: 0.4s;
+}
+.nav-menu-btn span:nth-child(3) {
+  margin-bottom: 0;
+}
+.nav-menu-btn:hover span {
+  background: @orange;
+}
+
+//Nav user panel
+
+.nav-user-panel {
+  color: white;
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid @lightgrey;
+  border-right: 1px solid @lightgrey;
+  margin-right: 20px;
+}
+.nav-user-panel p {
+  margin: 0 10px;
+  transition: 0.4s;
+  cursor: pointer;
+  color: @white;
+}
+.nav-user-panel p:hover {
+  color: @orange;
+}
+.nav-user-panel i {
+  padding: 0 8px;
+  font-size: 18px;
+  color: @white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.nav-user-panel i:hover {
+  color: @orange;
+}
+.nav-user-panel .fa-cog:hover {
+  transform: rotate(90deg);
+}
+.nav-user-panel .badge {
+  top: 6px;
+  position: absolute;
+  padding: 3px 6px;
+  background: @orange;
+}
+.nav-user-panel .dropdown {
+  padding: 0 8px;
+}
+.nav-user-panel .dropdown-menu {
+  right: -1px;
+  left: auto;
+  border-radius: 0;
+  top: 37px;
+  background: @grey;
+  border: 1px solid @lightgrey;
+  color: white;
+}
+.nav-user-panel .dropdown-menu a {
+  color: white;
+  transition: 0.4s;
+}
+.nav-user-panel .dropdown-menu a:hover {
+  color: @orange;
+  background: none;
+}
+.nav-user-panel .divider {
+  background: @lightgrey;
+}
+.blocked:hover {
+  cursor: not-allowed;
+}
+
+//Left menu
+
+.nav-menu {
+  display: block;
+  float: left;
+  position: fixed;
+  left: 0px;
+  top: 60px;
+  width: 230px;
+  height: calc(~"100vh - 103px");
+  color: white;
+  background: @darkgrey;
+  border-right: 1px solid @lightgrey;
+  transition: 0.4s;
+  overflow-y: auto;
+}
+.nav-menu h2 {
+  font-size: 18px;
+  padding: 30px 5px;
+  margin: 0;
+  text-align: center;
+}
+.nav-menu .nav-list {
+  padding-bottom: 70px;
+}
+.nav-user-panel-nickname {
+  display: none;
+}
+
+//Left menu hidden
+
+.nav-menu-hidden {
+  margin: 0;
+  padding: 0 !important;
+}
+.nav-menu-hidden li {
+  height: 40px;
+}
+.nav-menu-hidden a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  color: @white;
+  border-left: 1px solid @lightgrey;
+  border-top: 1px solid @lightgrey;
+  border-right: 1px solid @darkgrey;
+  border-bottom: 1px solid @darkgrey;
+  transition: 0.4s;
+}
+.nav-menu-hidden a:hover {
+  text-decoration: none;
+  color: @orange;
+  border-color: @orange;
+}
+
+//Menu list
+
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.nav-list p {
+  position: relative;
+  margin: 0;
+  padding: 10px 20px;
+  color: @white;
+  border-left: 1px solid @lightgrey;
+  border-top: 1px solid @lightgrey;
+  border-right: 1px solid @darkgrey;
+  border-bottom: 1px solid @darkgrey;
+  transition: 0.4s;
+}
+.nav-list p:nth-child(5) {
+  border-bottom: 1px solid @lightgrey;
+}
+.nav-list p:hover, .nav-menu p.active {
+  cursor: pointer;
+  border-color: @orange;
+  color: @orange;
+}
+.nav-list p i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+//Collapse list
+
+.collapse.in {
+  padding: 15px 0;
+}
+.nav-collapse-list {
+  margin: 20px 20px;
+}
+.nav-collapse-list li {
+  height: 40px;
+}
+.nav-collapse-list a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: @white;
+  transition: 0.4s;
+  padding: 10px 15px 10px 8px;
+}
+.nav-collapse-list a:hover {
+  background: @grey;
+  color: @orange;
+  text-decoration: none;
+}
+.nav-collapse-list i {
+  padding: 0 10px 0 20px;
+  font-size: 16px;
+}
+.nav-collapse-list .active {
+  color: @orange;
+  background: @grey;
+}
+.nav-collapse-list a span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color: @orange;
+}
+
+// Menu animation & Scroll
+
+.nav-menu.open {
+  transform: translateX(-230px);
+}
+.nav-menu::-webkit-scrollbar {
+  width: 0;
+}
+
+//Media
+
+@media screen and (max-width: 992px) {
+  .nav-menu {
+    transform: translateX(-230px);
+  }
+  .nav-menu.open {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-logo {
+    width: 100px;
+  }
+  .nav-logo img {
+    padding: 10px;
+  }
+  .nav-user-panel {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-logo img {
+    padding: 10px;
+  }
+  .nav-user-panel p {
+    display: none;
+  }
+  .nav-user-panel-nickname {
+    display: block;
+  }
+
+}

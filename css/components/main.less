@@ -1,0 +1,331 @@
+//out: ..\\styles.css, sourcemap: true, compress: true
+
+//Fonts
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,500,700&subset=latin-ext";
+
+//Components
+@import "typography.less";
+@import "buttons.less";
+@import "table.less";
+@import "form.less";
+@import "modal.less";
+@import "navigation.less";
+@import "layout.less";
+@import "preloader.less";
+@import "panel.less";
+
+//Colors
+@darkgrey: #2f2f2f;
+@grey: #3c3c3c;
+@lightgrey: #464646;
+@orange: #cd7400;
+@white: #d9d9d9;
+@green: #4EB682;
+@red: #B64E58;
+
+
+.alert-warning {
+  border-radius: 0;
+}
+.nav-menu-open {
+  padding-left: 15px !important;
+  transition: 0.4s;
+}
+section.container-fluid {
+  margin: 100px 0;
+  padding-left: 245px;
+  transition: padding-left 0.4s ease-out;
+  color: @white;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+// <----- Login form ------> \\
+
+#login {
+  background: @grey;
+}
+header {
+  width: 320px;
+  margin: 50px auto 10px auto;
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+// <----- Footer -----> \\
+
+footer {
+  background: @darkgrey;
+  color: @white;
+  padding: 12px 0;
+  border-top: 1px solid @lightgrey;
+}
+footer p {
+  margin: 0;
+}
+
+
+// <----- Panel ----->  \\
+
+section {
+  color: @white;
+}
+
+section h3 {
+  border: 1px solid @lightgrey;
+  padding: 7px;
+  background: @lightgrey;
+}
+.add-panel {
+  transition: 0.4s;
+}
+.add-panel:hover {
+  color: @orange;
+  cursor: pointer;
+}
+
+// <----- User managment -----> \\
+
+
+.form input {
+  border-radius: 0;
+  background: @grey;
+  border: none;
+  box-shadow: none;
+  color: white;
+  transition: 0.8s;
+  outline: none;
+}
+.form input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px @grey inset;
+  -webkit-text-fill-color: white !important;
+}
+.form.panel-form input{
+  background: @lightgrey;
+}
+
+
+// <----- Maps -----> //
+
+.form select {
+  border: none;
+  background: @lightgrey;
+  color: @white;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form select option:focus {
+  border: none;
+  text-align: center;
+  outline: none;
+}
+.form .select
+{
+  min-height: 50vh;
+  height: auto;
+}
+
+// <----- Schedule ----->  \\
+
+.done {
+  color: #4EB682;
+  font-weight: bold;
+}
+.in-work {
+  color: #F5FF90;
+  font-weight: bold;
+}
+.not-done {
+  color: #B64E58;
+  font-weight: bold;
+}
+.raport {
+  transition: 0.4s;
+}
+.raport:hover {
+  color: @orange;
+  cursor: pointer;
+}
+input[type="file"] {
+  display: none;
+}
+.file-upload {
+  border: 1px solid @white;
+  display: inline-block;
+  padding: 6px 12px;
+  transition: 0.4s;
+}
+.file-upload:hover {
+  background: @orange;
+  border-color: @orange;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+// <----- Nav tabs ------> \\
+
+.nav-tabs {
+  border-bottom: none;
+}
+.nav-tabs>li {
+  margin: 0;
+}
+.nav-tabs li a {
+  color: @white;
+  border: 1px solid @lightgrey;
+  border-radius: 0 !important;
+  transition: 0.4s;
+}
+.nav-tabs li a:hover {
+  background: @orange;
+  color: @white;
+  border-color: @orange;
+}
+.nav-tabs>li.active>a {
+  background: @orange !important;
+  border-color: @orange !important;
+  color: @white !important;
+}
+.nav-stacked>li+li {
+  margin: 0;
+}
+.tabs-buttons {
+  padding: 25px 0;
+}
+.accept>a {
+  background: #4EB682;
+  border-color: #4EB682;
+}
+
+// <----- New shit -----> \\
+
+.square-tile {
+  height: 200px;
+  position: relative;
+  border: 2px solid @white;
+  margin-bottom: 50px;
+  transition: 0.7s;
+  background: @darkgrey;
+}
+.square-tile:hover {
+  cursor: pointer;
+  background: @orange;
+  color: @white;
+  border-color: @orange;
+}
+.square-tile h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  font-size: 26px;
+  color: @white;
+}
+
+//gallery tiles
+
+.gallery-tile {
+  position: relative;
+  z-index: 5;
+}
+.gallery-tile:hover {
+  cursor: pointer;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1031
+}
+.overlay img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 80%;
+  width: 100%;
+  z-index: 1032;
+}
+.overlay i {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  font-size: 26px;
+  color: @white;
+  z-index: 1032;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.overlay i:hover {
+  color: @orange;
+}
+
+
+// <----- Media -----> \\
+
+@media screen and (max-width: 992px) {
+  section.container-fluid {
+    padding-left: 15px;
+  }
+
+  .table-tab {
+    margin: 20px 0;
+  }
+  .tab-pane img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #login-form form {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .user-panel p {
+    display: none;
+  }
+  header {
+    width: 240px;
+  }
+
+}
+
+@media screen and (max-height: 380px) {
+  .overlay i {
+    right: 25px;
+  }
+}
