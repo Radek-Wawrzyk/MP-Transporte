@@ -67,7 +67,7 @@
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>patwoj98</td>
+                  <td>Patwoj</td>
                   <td>543 km</td>
                   <td>54</td>
                 </tr>
@@ -79,13 +79,13 @@
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Xayoo</td>
+                  <td>Pimpuszek</td>
                   <td>267 km</td>
                   <td>12</td>
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>DiStream</td>
+                  <td>Max</td>
                   <td>21 km</td>
                   <td>1</td>
                 </tr>
@@ -113,19 +113,19 @@
             </thead>
             <tbody>
               <tr>
-                <td>Adolf Hittler</td>
-                <td>01/09/1939</td>
-                <td>Popełnił największy błąd</td>
+                <td>Ulrich von Jungingen</td>
+                <td>15/07/1410</td>
+                <td>Popełnił błąd</td>
               </tr>
               <tr>
-                <td>Ja</td>
-                <td>21-02-1998</td>
-                <td>Dzień, w którym zatrzymała się Ziemia</td>
+                <td>Radziu</td>
+                <td>21-02-2018</td>
+                <td>Ukończył trasę</td>
               </tr>
               <tr>
                 <td>Eugeniusz Krab</td>
-                <td>24-05-2017</td>
-                <td>Wpierdzielił wszystkie krabo burgery</td>
+                <td>24-05-1987</td>
+                <td>Stworzył tajemny przepis</td>
               </tr>
             </tbody>
           </table>

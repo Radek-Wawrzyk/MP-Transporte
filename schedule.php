@@ -50,7 +50,7 @@
                   <tr>
                     <td>5</td>
                     <td>Moskwa</td>
-                    <td>Blyat city</td>
+                    <td>Lwów</td>
                     <td class="raport" data-toggle="modal" data-target="#raport">Raport <i class="fa fa-pencil" aria-hidden="true"></i></td>
                     <td class="not-done">Nie rozliczona</td>
                   </tr>
@@ -104,7 +104,7 @@
                   <tr>
                     <td>5</td>
                     <td>Moskwa</td>
-                    <td>Blyat city</td>
+                    <td>Lwów</td>
                     <td class="raport" data-toggle="modal" data-target="#raport">Raport <i class="fa fa-pencil" aria-hidden="true"></i></td>
                     <td class="not-done">Nie rozliczona</td>
                   </tr>
@@ -170,7 +170,7 @@
               </div>
               <div class="form-group">
                 <textarea class="form-control">
-                  xdxd
+                  treść
                 </textarea>
               </div>
               <div class="form-group">

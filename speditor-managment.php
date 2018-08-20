@@ -18,17 +18,17 @@
               <tbody>
                 <tr>
                   <td>Rozpiska kamila</td>
-                  <td>analny-rozjemca</td>
+                  <td>kamilek98pl</td>
                   <td><i data-toggle="modal" data-target="#check-raport" class="fa fa-sticky-note" aria-hidden="true" ></i></td>
                 </tr>
                 <tr>
-                  <td>Zjebana rozpiska</td>
+                  <td>Super trasa</td>
                   <td>Człowiek co to wymyśla</td>
                   <td><i data-toggle="modal" data-target="#check-raport" class="fa fa-sticky-note" aria-hidden="true"></i></td>
                 </tr>
                 <tr>
-                  <td>dobra rozpiska</td>
-                  <td>mokra_alicja_69</td>
+                  <td>Bober</td>
+                  <td>BoberKozak</td>
                   <td><i data-toggle="modal" data-target="#check-raport" class="fa fa-sticky-note" aria-hidden="true"></i></td>
                 </tr>
               </tbody>

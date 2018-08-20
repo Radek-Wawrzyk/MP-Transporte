@@ -14,7 +14,7 @@
                   <select class="form-control" id="sel1">
                     <option>Anglia</option>
                     <option>Polska</option>
-                    <option>Kacapowo</option>
+                    <option>Litwa</option>
                   </select>
                 </div>
                 <div class="form-group">

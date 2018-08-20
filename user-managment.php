@@ -18,10 +18,10 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Mokry tatusiek (XD)</td>
-                  <td>hot_daddy_69@wp.pl</td>
+                  <td>BoberKozak</td>
+                  <td>boberKozak@wp.pl</td>
                   <td>21-37-2005</td>
-                  <td>Stworzyciel</td>
+                  <td>użytkownik</td>
                   <td>
                     <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#edit-modal"></i>
                     <i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -29,9 +29,9 @@
                 </tr>
                 <tr>
                   <td>patwoj98</td>
-                  <td>patcwel@gmail.com</td>
+                  <td>patwojekSłodziaczek@gmail.com</td>
                   <td>17-01-2017</td>
-                  <td>Gay!</td>
+                  <td>Admin</td>
                   <td>
                     <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#edit-modal"></i>
                     <i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -39,9 +39,9 @@
                 </tr>
                 <tr>
                   <td>Eugeniusz Krab</td>
-                  <td>krab_pl98@onet.pl</td>
+                  <td>krabozilla@onet.pl</td>
                   <td>21-05-2016</td>
-                  <td>Grubszy kasztan</td>
+                  <td>Spedytor</td>
                   <td>
                     <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#edit-modal"></i>
                     <i class="fa fa-trash-o" aria-hidden="true"></i>

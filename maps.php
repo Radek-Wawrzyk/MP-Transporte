@@ -33,8 +33,8 @@
                 </td>
               </tr>
               <tr>
-                <td>Mapa Rosji</td>
-                <td>Zadupie dolne, Canvas City(XD), Żopa, Moskwa</td>
+                <td>Mapa Ukrainy</td>
+                <td>Charków, Kijów, Donieck, Lwów</td>
                 <td>
                   <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#edit-config"></i>
                   <i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -59,7 +59,7 @@
                 <select class="form-control" id="sel1">
                   <option>Polska</option>
                   <option>Anglia</option>
-                  <option>Kacapowo</option>
+                  <option>Ukraina</option>
                 </select>
               </div>
               <div class="form-group">
@@ -113,8 +113,8 @@
                 </td>
               </tr>
               <tr>
-                <td>Rosja</td>
-                <td>Wypizdowie dolne,Canvas City , Żopa, Moskwa</td>
+                <td>Mapa Ukrainy</td>
+                <td>Charków, Kijów, Donieck, Lwów</td>
                 <td>
                   <i class="fa fa-pencil" aria-hidden="true" data-toggle="modal" data-target="#edit-config-data"></i>
                   <i class="fa fa-trash-o" aria-hidden="true"></i>
@@ -227,7 +227,7 @@
               <select class="form-control" id="sel1">
                 <option>Polska</option>
                 <option>Anglia</option>
-                <option>Kacapowo</option>
+                <option>Ukraina</option>
               </select>
             </div>
             <div class="form-group">
